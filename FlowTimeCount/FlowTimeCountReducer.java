@@ -9,7 +9,7 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.util.*;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class FlowTimeCountReducer extends Reducer<Text, IntWritable, Text, DoubleWritable> {
+public class FlowTimeCountReducer extends Reducer<Text, DoubleWritable, Text, DoubleWritable> {
 
 	public void reduce(Text key, Iterable<DoubleWritable> values, Context context)
 			throws IOException, InterruptedException {

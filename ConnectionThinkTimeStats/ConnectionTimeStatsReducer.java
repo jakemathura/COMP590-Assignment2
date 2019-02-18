@@ -9,7 +9,7 @@ import org.apache.hadoop.io.*;
 import org.apache.hadoop.util.*;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class ConnectionTimeStatsReducer extends Reducer<Text, IntWritable, Text, DoubleWritable> {
+public class ConnectionTimeStatsReducer extends Reducer<Text, DoubleWritable, Text, DoubleWritable> {
 
 	private ArrayList<Float> thinkTimes = new ArrayList<Float>();
 

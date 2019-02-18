@@ -37,12 +37,12 @@ public class ConnectionTimeStatsMapper
             IPaddr1 = tokens[2];
             last_dot = IPaddr1.lastIndexOf('.');
             // get IP address 1 port
-            String IPaddr1port = IPaddr1.substring(last_dot, IPaddr1.length() - 1);
+            String IPaddr1port = IPaddr1.substring(last_dot + 1, IPaddr1.length() - 1);
             // get IP address 2
             IPaddr2 = tokens[4];
             last_dot2 = IPaddr2.lastIndexOf('.');
             // get IP address 2 port
-            String IPaddr2port = IPaddr2.substring(last_dot2, IPaddr2.length() - 1);
+            String IPaddr2port = IPaddr2.substring(last_dot2 + 1, IPaddr2.length() - 1);
 
             // get thinktime
             thinkTime = Double.parseDouble(tokens[7]);
